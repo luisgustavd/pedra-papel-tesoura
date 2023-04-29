@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel ou Tesoura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pedra, Papel ou Tesoura</h1>
+    </header>
+    <div class="placar">
+        <div class="icone" id="user-label">Você</div>
+        <div class="icone" id="computer-label">CPU</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+    <div class="resultado">
+        <p>Papel cobre Pedra. Você venceu!</p>
+    </div>
+
+    <div class="escolhas">
+        <div class="escolha" id = "r">
+            <img src="img/pedra.png" alt="">
+        </div>
+        <div class="escolha" id = "p">
+            <img src="img/papel.png" alt="">
+        </div>
+        <div class="escolha" id = "s">
+            <img src="img/tesoura.png" alt="">
+        </div>
+    </div>
+
+    <p id="action-message">Escolha uma opção.</p>
+    <script src="app.js" charset="UTF-8"></script>
+</body>
+</html>

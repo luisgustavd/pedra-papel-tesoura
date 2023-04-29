@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/*
+    Estrutura CSS
+    Eliminando as bordas dos elementos
+*/
+
+/* PADRONIZACAO DE ELEMENTOS NO CODIGO */
+/*
+    configuracoes
+
+    fontes 
+
+    cores
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #292C34;
+}
+/*Estilizando o Header*/
+header{
+    padding: 20px;
+    background:#fff;
+
+}
+/*Colocando cor no texto h1 do header*/
+header > h1{
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    color: #25272E;
+}
+/*
+    Estilizacao do ScoreBoard
+*/
+.placar{
+    margin: 20px auto; /*centralizacao do elemento */
+    padding: 14px 18px;
+    border: 3px solid white; /* BORDA SOLIDA */
+    border-radius: 4px; /* BORDAS ARREDONDADAS*/
+    width: 300px;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-family: Poppins, sans-serif;
+    color: white;
+}
+/*
+    Estilizando os Icones ou Insignias (User and Comp)
+*/
+.icone{
+    padding:2px 8px;
+    border:1px solid white;
+    border-radius:2px;
+    font-size:14px;
+    font-family:Poppins, sans-serif;
+    background: #E2584D;
+    color: white;
+}
+/* Separando os icones do placar atraves de ID's */
+#user-label{
+    position:absolute;
+    top:35px;
+    left:-30px;
+}
+#computer-label{
+    position:absolute;
+    top: 35px;
+    right:-25px;
+}  
+/* Estilizando o texto que notifica o resultado */
+.resultado{
+    font-size: 30px;
+    color: white;
+}
+.resultado > p{
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+}
+/*
+    Estilizando a secao das imagens ou escolhas ( PEDRA, PAPEL OU TESOURA)
+*/
+.escolhas{
+    margin: 50px 0;
+    text-align:center;
+}
+.escolha{
+    margin: 0 20px;
+    padding: 20px;
+    display:inline-block;
+    border: 4px solid white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+/* COLOCANDO ANIMACAO DO MOUSE POR CIMA DAS IMAGENS(COMO SE FOSSEM BOTOES)*/
+.escolha:hover{
+    cursor: pointer;
+    background-color: #38393d;
+}
+/* REDUZINDO E AJUSTANDO O TAMANHO DAS IMAGENS */
+.escolha img{
+    width: 100px;
+    height: 100px;
+}
+#action-message{
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+/* EXTRA CSS ANIMADO E IMPLEMENTADO EM JS */
+
+/*ESTA SECAO EH DESTINADA PARA MUDANCAS DE CORES NOS BUTOES QUANDO VENCER, PERDER E EMPATAR => ANIMADO NO APP.JS*/
+.green-glow{
+    border: 4px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+}
+.red-glow{
+    border: 4px solid #fc121b;
+    box-shadow: 0 0 10px #d01115;
+}
+.gray-glow{
+    border: 4px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+}
